@@ -1,17 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+
 def homepage(request):
-    return HttpResponse("this is the home page")
+    return render(request, "crm/index.html")
 
 
 def register(request):
-    pass
+    return render(request, "crm/register.html")
 
 
 def my_login(request):
-    pass
+    return render(request, "crm/my-login.html")
 
 
 def dashboard(request):
-    pass
+    return render(request, "crm/dashboard.html")
